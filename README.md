@@ -20,8 +20,8 @@ Coming soon — [placeholder]
 
 ## Team
 
-- Name · role
-- Name · role
+- Jane Doe · Designer
+- John Doe · Developer
 
 ## Course
 
