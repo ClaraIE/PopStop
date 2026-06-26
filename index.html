@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PopStop | The app that screams before your popcorn dies</title>
+    <meta
+      name="description"
+      content="PopStop listens to your microwave popcorn and warns you before the bag crosses into burnt territory."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="PopStop home">
+        <span class="brand-mark">PS</span>
+        <span>PopStop</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Open navigation</span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav">
+        <a href="#how">How It Works</a>
+        <a href="#alarm">Alarm</a>
+        <a href="#bags">Bags</a>
+        <a class="nav-cta" href="#waitlist">Join Waitlist</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <img class="hero-image" src="assets/popstop-hero.jpg" alt="" aria-hidden="true">
+        <div class="hero-scrim"></div>
+
+        <div class="hero-content">
+          <p class="eyebrow">Microwave mercy, outsourced.</p>
+          <h1 id="hero-title">The app that screams before your popcorn dies.</h1>
+          <p class="hero-copy">
+            Big Popcorn wins when you torch another bag. PopStop listens to the pops,
+            reads the bag, and tells your hand when to end the damage.
+          </p>
+          <a class="button primary" href="#waitlist">Join the anti-burn list</a>
+        </div>
+
+        <div class="status-rail" aria-label="PopStop live status preview">
+          <span>MIC ARMED</span>
+          <span>BAG SCANNED</span>
+          <span>BURN RISK: RUDE</span>
+        </div>
+      </section>
+
+      <section class="section intro-strip" aria-label="Product summary">
+        <p>PopStop does not stop the microwave. It stops you from becoming the weak link.</p>
+      </section>
+
+      <section class="section split" id="how" aria-labelledby="how-title">
+        <div class="section-copy">
+          <p class="eyebrow">The operation</p>
+          <h2 id="how-title">Three steps. One less smoke alarm incident.</h2>
+        </div>
+
+        <div class="process-list">
+          <article class="process-item">
+            <span class="step-number">01</span>
+            <div>
+              <h3>Scan the bag</h3>
+              <p>The app reads the bag photo so it knows what kind of kernel situation you dragged into its life.</p>
+            </div>
+          </article>
+          <article class="process-item offset">
+            <span class="step-number">02</span>
+            <div>
+              <h3>Start listening</h3>
+              <p>The microphone follows the pop cadence in the foreground while the meter tells you it is still awake.</p>
+            </div>
+          </article>
+          <article class="process-item">
+            <span class="step-number">03</span>
+            <div>
+              <h3>Obey the alarm</h3>
+              <p>When the pop pattern turns suspicious, PopStop gets loud and gives you one job.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section alarm-section" id="alarm" aria-labelledby="alarm-title">
+        <div class="alarm-copy">
+          <p class="eyebrow">The scream layer</p>
+          <h2 id="alarm-title">Polite apps whisper. PopStop files a noise complaint against your microwave.</h2>
+        </div>
+
+        <div class="alarm-panel" aria-label="Sample PopStop alarm state">
+          <div class="meter" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <p class="alarm-line">REMOVE THE BAG, HERO.</p>
+          <button class="button alarm-button" type="button">STOP THE MICROWAVE</button>
+        </div>
+      </section>
+
+      <section class="section bands" id="bags" aria-labelledby="bags-title">
+        <div>
+          <p class="eyebrow">The business model</p>
+          <h2 id="bags-title">The app is the weapon. The popcorn is ammunition.</h2>
+        </div>
+        <div class="band-grid">
+          <article>
+            <h3>App-first product</h3>
+            <p>PopStop sells the panic prevention. The bag just gives the app another reason to yell.</p>
+          </article>
+          <article>
+            <h3>Reorder without ceremony</h3>
+            <p>Subscriptions and bag reorders live inside the same product world as the alarm.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section waitlist" id="waitlist" aria-labelledby="waitlist-title">
+        <div class="waitlist-copy">
+          <p class="eyebrow">Enter the bunker</p>
+          <h2 id="waitlist-title">Get warned before your kitchen smells like defeat.</h2>
+        </div>
+
+        <form class="signup-form" id="signup-form" novalidate>
+          <label for="email">Email address</label>
+          <div class="input-row">
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+            <button class="button primary" type="submit">Arm me</button>
+          </div>
+          <p class="form-message" id="form-message" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>PopStop</span>
+      <span>Legacy popcorn had a nice run.</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
